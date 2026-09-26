@@ -17,6 +17,29 @@
 header {
     background-color: white;
     color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--accent1-color);
+    font-weight: bold;
+}
+
+header img {
+    width: 100%;
+    height: auto;
 }
 
 body {
@@ -33,6 +56,26 @@ footer {
 
 footer {
     color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 16px;
+    align-items: center;
+}
+
+.history h2 {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.history img {
+    width: 200px;
+    height: auto;
 }
 
 h1,
@@ -47,6 +90,12 @@ section,
 article {
     margin: 16px;
     padding: 8px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+    margin: 0;
 }
 
 .socialmedia a {
@@ -90,12 +139,33 @@ h1 {
     opacity: 0.8;
 }
 
+.adventures figure {
+    margin: 0;
+    padding: 0;
+}
+
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    text-align: center;
+}
+
+.adventures h2 {
+    grid-column: 1 / -1;
+}
+
 .hero article img {
     float: right;
     width: 125px;
 }
 
-/* 4. Solución al contraste del h2: texto blanco sobre fondo azul oscuro */
+.adventures figure img {
+    width: 100%;
+    height: auto;
+}
+
+/*Solución al contraste del h2: texto blanco sobre fondo azul oscuro*/
 section h2 {
     background-color: var(--accent1-color);
     color: white;
