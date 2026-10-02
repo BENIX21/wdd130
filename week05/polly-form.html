@@ -13,48 +13,50 @@
 <body>
 
     <header>
-        <h1>WDD 130 | HTML Form - User Poll</h1>
+        <h1>WDD 130 | Basic HTML and CSS Quiz</h1>
     </header>
 
     <main>
+
         <form>
-            <fieldset>
-                <legend>User Information</legend>
-                <div class="form-item column2">
-                    <label for="fullname">Full Name:</label>
-                    <input type="text" id="fullname" name="fullname" required>
-                </div>
-                <div class="form-item column2">
-                    <label for="username">Email:</label>
-                    <input type="email" id="username" name="username" required>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Questions</legend>
-                <div class="form-item column1">
-                    <label for="browser">What is your favorite browser?</label>
-                    <select name="browser" id="browser">
-                        <option value="1">Google</option>
-                        <option value="2">Brave</option>
-                        <option value="3">Firefox</option>
-                    </select>
-                </div>
-                <div class="form-item column1">
-                    <label for="pet">Do you have a household pet?</label>
-                    <input type="checkbox" id="pet" name="pet">
-                </div>
-                <div class="form-item">
-                    <label for="feedback">List the places you have lived:</label>
-                    <textarea name="feedback" id="feeback" rows="4"
-                      placeholder="Stillwater Florida, Amsterdam Netherlands, Timbuktu Mali"></textarea>
-                </div>
-            </fieldset>
-            <button type="submit">Submit Poll</button>
+            <div class="form-item">
+                <label for="q1"><span class="q-num">1.</span> What does the acronym CSS stand
+                    for?</label>
+                <input type="text" id="q1" name="q1" required>
+            </div>
+
+            <div class="form-item">
+                <label for="q2"><span class="q-num">2.</span> How are id and class attributes
+                    selected
+                    in CSS?</label>
+                <textarea id="q2" name="q2" rows="4" required></textarea>
+            </div>
+
+            <div class="form-item">
+                <label for="q3"><span class="q-num">3.</span> Which of the following is a valid CSS
+                    comment?</label>
+                <select id="q3" name="q3" required>
+                    <option value="" selected disabled>Choose One ...</option>
+                    <option value="1">/* This is a comment */</option>
+                    <option value="2">&lt;!-- This is a comment --&gt;</option>
+                    <option value="3">// This is a comment</option>
+                    <option value="4">' This is a comment '</option>
+                </select>
+            </div>
+
+            <div class="form-item">
+                <label for="q4"><span class="q-num">4.</span> What is the default font size in
+                    pixels
+                    for most web browsers?</label>
+                <input type="number" id="q4" name="q4" placeholder="e.g. 16" required>
+            </div>
+
+            <button type="submit">Submit Quiz</button>
         </form>
     </main>
 
     <footer>
-        <p>©2026 | WDD 130 User Poll | HTML Form Exercise</p>
+        <p>©2026 | WDD 130 | Benjamin Heredia</p>
     </footer>
 
 </body>
