@@ -200,7 +200,6 @@ main.contact {
     padding: 20px 0;
 }
 
-/* 2. Información de la empresa (ARRIBA, CENTRADA) */
 main.contact section,
 main.contact div.contact-grid {
     margin-left: 0;
@@ -209,7 +208,6 @@ main.contact div.contact-grid {
     padding-right: 0;
 }
 
-/* 2. Información de la empresa en caja/tarjeta cerrada */
 .company-info {
     text-align: center;
     width: 100%;
@@ -243,7 +241,6 @@ main.contact div.contact-grid {
     margin-bottom: 14px;
 }
 
-/* 3. Mapa y Formulario en 2 columnas perfectas */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -339,7 +336,6 @@ main.contact div.contact-grid {
     background-color: #1d3557;
 }
 
-/* 4. Sección de Empleados en 3 columnas alineadas */
 .employees-section {
     width: 100%;
     margin-top: 10px;
