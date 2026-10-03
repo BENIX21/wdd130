@@ -14,8 +14,18 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #eef2f5;
+    background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.adventures {
+    color: black;
+}
+
 header {
-    background-color: white;
+    background-color: rgba(204, 202, 202, 0.3);
     color: var(--accent2-color);
     display: grid;
     grid-template-columns: auto 1fr;
@@ -165,11 +175,9 @@ h1 {
     height: auto;
 }
 
-/*Solución al contraste del h2: texto blanco sobre fondo azul oscuro*/
 section h2 {
     background-color: var(--accent1-color);
     color: white;
-    /* <--- Agregado para corregir el contraste */
     opacity: 0.9;
     text-align: center;
     font-family: var(--body-font);
@@ -182,4 +190,195 @@ section h2 {
 section p {
     color: black;
     text-align: center;
+}
+
+main.contact {
+    display: flex;
+    flex-direction: column;
+    width: 840px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* 2. Información de la empresa (ARRIBA, CENTRADA) */
+main.contact section,
+main.contact div.contact-grid {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* 2. Información de la empresa en caja/tarjeta cerrada */
+.company-info {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 25px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.company-info h1 {
+    position: static;
+    /* Desactiva el position absolute global */
+    background-color: var(--accent1-color, #264653);
+    color: white;
+    padding: 12px;
+    margin: 0 0 12px 0;
+    font-size: 2rem;
+    opacity: 1;
+}
+
+.company-info p {
+    color: black;
+    margin: 6px 0;
+    padding: 0 15px;
+    font-size: 1rem;
+}
+
+.company-info p:last-child {
+    margin-bottom: 14px;
+}
+
+/* 3. Mapa y Formulario en 2 columnas perfectas */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 35px;
+    align-items: stretch;
+}
+
+.map-container {
+    width: 100%;
+    height: 100%;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+    border: none;
+    border-radius: 4px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: black;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-item label {
+    font-weight: bold;
+    color: black;
+}
+
+.form-item input[type="text"],
+.form-item input[type="email"],
+.form-item textarea {
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+.radio-group {
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.radio-group legend {
+    font-weight: bold;
+    padding: 0 5px;
+    color: black;
+}
+
+.radio-label,
+.checkbox-item label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+    color: black;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: var(--accent1-color, #264653);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #1d3557;
+}
+
+/* 4. Sección de Empleados en 3 columnas alineadas */
+.employees-section {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.employees-section h2 {
+    background-color: var(--accent1-color, #264653);
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    opacity: 1;
+}
+
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.employee-grid figure {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.employee-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.employee-grid figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+    color: black;
 }

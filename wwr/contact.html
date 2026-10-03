@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exciting Expeditions | Contact Us</title>
+
+    <meta name="description"
+      content="Contact Exciting Expeditions for questions, bookings, or inquiries about our whitewater rafting trips in Paraná, Argentina">
+    <meta name="author" content="Benjamin Daniel Heredia Urbinatti">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/z-wwr-crossedoars.png" alt="Rafting Site Logo">
+        <nav>
+            <ul>
+                <li><a href="cd../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact">
+        <!-- 1. INFORMACIÓN DE LA EMPRESA (ARRIBA DE TODO) -->
+        <section class="company-info">
+            <h1>Exciting Expeditions</h1>
+            <p>E3100 Paraná, Entre Ríos, Argentina</p>
+            <p>+54 123 456 7890</p>
+            <p>info@excitingexpeditions.com</p>
+        </section>
+
+        <!-- 2. MAPA Y FORMULARIO (ABAJO DE LA INFORMACIÓN, EN 2 COLUMNAS) -->
+        <div class="contact-grid">
+            <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d54300.40091999807!2d-60.5691792!3d-31.7220391!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1791047202769!5m2!1ses-419!2sar"
+                  allowfullscreen="" loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+            <form action="#" method="post" class="contact-form">
+                <div class="form-item">
+                    <label for="username">Name:</label>
+                    <input type="text" id="username" name="username" placeholder="Placeholder"
+                      required>
+                </div>
+
+                <div class="form-item">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail" placeholder="Placeholder"
+                      required>
+                </div>
+
+                <fieldset class="radio-group">
+                    <legend>Message Purpose</legend>
+                    <label class="radio-label">
+                        <input type="radio" id="general" name="purpose" value="general" checked>
+                        General Inquiry
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                        Website Suggestion
+                    </label>
+                </fieldset>
+
+                <div class="form-item">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Type here"
+                      required></textarea>
+                </div>
+
+                <div class="form-item checkbox-item">
+                    <label>
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        Please Subscribe me to the monthly newsletter
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">Get in Touch!</button>
+            </form>
+        </div>
+
+        <!-- 3. EMPLEADOS (ABAJO DE TODO) -->
+        <section class="employees-section">
+            <h2>We Are Here to Serve You</h2>
+            <div class="employee-grid">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Carlos Gómez - Lead Guide">
+                    <figcaption>Carlos Gómez - Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="María López - Operations Manager">
+                    <figcaption>María López - Operations Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Juan Pérez - Safety Instructor">
+                    <figcaption>Juan Pérez - Safety Instructor</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>©2026 ☀️ Exciting Expeditions ☀️ Benjamin Heredia</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook Icon">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.svg" alt="LinkedIn Icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram Icon">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
