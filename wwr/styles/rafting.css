@@ -14,14 +14,13 @@
     box-sizing: border-box;
 }
 
+/* Selector body unificado */
 body {
+    font-family: var(--body-font);
+    color: white;
     background-color: #eef2f5;
     background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
     background-size: 20px 20px;
-}
-
-.adventures {
-    color: black;
 }
 
 header {
@@ -50,11 +49,6 @@ header nav a {
 header img {
     width: 100%;
     height: auto;
-}
-
-body {
-    font-family: var(--body-font);
-    color: white;
 }
 
 header,
@@ -149,25 +143,27 @@ h1 {
     opacity: 0.8;
 }
 
-.adventures figure {
-    margin: 0;
-    padding: 0;
+.hero article img {
+    float: right;
+    width: 125px;
 }
 
+/* Selector .adventures unificado */
 .adventures {
+    color: black;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 12px;
     text-align: center;
 }
 
-.adventures h2 {
-    grid-column: 1 / -1;
+.adventures figure {
+    margin: 0;
+    padding: 0;
 }
 
-.hero article img {
-    float: right;
-    width: 125px;
+.adventures h2 {
+    grid-column: 1 / -1;
 }
 
 .adventures figure img {
@@ -191,6 +187,8 @@ section p {
     color: black;
     text-align: center;
 }
+
+/* ESTILOS EXCLUSIVOS PARA CONTACT.HTML */
 
 main.contact {
     display: flex;
@@ -221,7 +219,6 @@ main.contact div.contact-grid {
 
 .company-info h1 {
     position: static;
-    /* Desactiva el position absolute global */
     background-color: var(--accent1-color, #264653);
     color: white;
     padding: 12px;
